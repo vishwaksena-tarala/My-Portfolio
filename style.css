@@ -210,7 +210,7 @@ section .tittle::after{
 
 .aboutcontent .right p {
     text-align: justify;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .aboutcontent .right a {
@@ -284,8 +284,8 @@ section .tittle::after{
 
 .acheivecontent .card p{
     font-size: 18px;
+    text-align: left;
 }
-
 .acheivecontent .box a {
     display: inline-block;
     background: rgb(4, 21, 41);
@@ -388,6 +388,9 @@ section .tittle::after{
 .skillcontent .right .mysql::before{
     width: 65%;
 }
+.more{
+    display: none;
+}
 
 .project .tittle::before{
     width: 200px;
@@ -431,6 +434,14 @@ section .tittle::after{
 }
 .projects .card:hover img{
     border-color: black;
+}
+.links{
+    padding-top: 10px;
+    font-size: 20px;
+    color: rgb(101, 172, 219);
+}
+.links:hover{
+    color: brown;
 }
 .owl-dots{
     text-align: center;
