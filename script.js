@@ -19,6 +19,12 @@ $(document).ready(function () {
     $(".menu").toggleClass("active");
     $(".menubar i").toggleClass("active");
     });
+    $(".morebutton").click(function () {
+        $(".more").toggle();
+        $(this).text(function (i, text) {
+        return text === "Read More" ? "Read Less" : "Read More";
+        });
+    });
 
     var typed=new Typed(".typing",{
         strings:['Btech Student','Coding Enthusiast','Curious Learner','Creative thinker','Inovative Problem Solver'],
