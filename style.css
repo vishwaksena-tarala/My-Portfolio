@@ -267,6 +267,11 @@ section .tittle::after{
     padding-top: 10px;
 }
 
+.acheivecontent .card .box .box1{
+    background-color: aliceblue;
+    padding: 15px;
+}
+
 .acheivecontent .card:hover .box{
     transform: scale(1.05);
 }
