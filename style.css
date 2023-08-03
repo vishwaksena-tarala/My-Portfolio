@@ -132,9 +132,9 @@ html{
     width: 120px;
     height:10px;
 }
-#myphoto{
-    position: absolute;
-    left: 900px;
+#myphoto {
+    max-width: auto;
+    height: auto;
 }
 
 section{
@@ -192,14 +192,16 @@ section .tittle::after{
     width: 45%;
 }
 
-.aboutcontent .left img{
-    height: 400px;
-    width:500px;
+.aboutcontent .left img {
+    height: auto;
+    width: 100%;
     object-fit: cover;
 }
+
 .aboutcontent .right {
     flex: 0 0 55%;
     width: 50%;
+    padding-right: 50px;
 }
 
 .aboutcontent .right .text {
@@ -601,10 +603,11 @@ footer .name{
     .homecontent .text1{
     font-size: 30px;
     }
-    .aboutcontent .left img{
-    height: 300px;
-    width:400px;
-}
+    .aboutcontent .left img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 @media (max-width:970px){
@@ -695,5 +698,125 @@ footer .name{
 @media (max-width:700px){
     .acheivecontent .card{
         width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        padding: 4px 0;
+    }
+    .logo a {
+        font-size: 25px;
+    }
+    .menu li a {
+        font-size: 14px;
+    }
+    .homecontent .text1{
+        font-size: 20px;
+    }
+    .homecontent .text2{
+        font-size: 30px;
+    }
+    .homecontent .text3{
+        font-size: 20px;
+    }
+    .aboutcontent .left, .aboutcontent .right {
+        width: 100%;
+    }
+    .acheivecontent .card {
+        width: 100%;
+    }
+    .skillcontent .column {
+        width: 100%;
+    }
+    .contactcontent .column {
+        width: 100%;
+    }
+    .menubar {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 601px and up) */
+@media only screen and (min-width: 601px) {
+    .navbar {
+        padding: 6px 0;
+    }
+    .logo a {
+        font-size: 30px;
+    }
+    .menu li a {
+        font-size: 16px;
+    }
+    .homecontent .text1{
+        font-size: 30px;
+    }
+    .homecontent .text2{
+        font-size: 45px;
+    }
+    .homecontent .text3{
+        font-size: 30px;
+    }
+    .aboutcontent .left, .aboutcontent .right {
+        width: 50%;
+    }
+    .acheivecontent .card {
+        width: calc(50% - 10px);
+    }
+    .skillcontent .column {
+        width: 50%;
+    }
+    .contactcontent .column {
+        width: 50%;
+    }
+    .menubar {
+        display: none;
+    }
+    .menu {
+        display: inline-block;
+    }
+}
+
+/* Large devices (laptops/desktops, 993px and up) */
+@media only screen and (min-width: 993px) {
+    .navbar {
+        padding: 8px 0;
+    }
+    .logo a {
+        font-size: 35px;
+    }
+    .menu li a {
+        font-size: 18px;
+    }
+    .homecontent .text1{
+        font-size: 37px;
+    }
+    .homecontent .text2{
+        font-size: 65px;
+    }
+    .homecontent .text3{
+        font-size: 48px;
+    }
+    .aboutcontent .left, .aboutcontent .right {
+        width: 50%;
+    }
+    .acheivecontent .card {
+        width: calc(33% - 20px);
+    }
+    .skillcontent .column {
+        width: 50%;
+    }
+    .contactcontent .column {
+        width: 50%;
+    }
+    .menubar {
+        display: none;
+    }
+    .menu {
+        display: inline-block;
     }
 }
