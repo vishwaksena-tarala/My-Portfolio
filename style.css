@@ -679,7 +679,7 @@ footer .name {
     #myphoto {
         width: 80%;
     }
-    
+
     .maxwidth {
         padding: 0 30px;
     }
@@ -807,7 +807,7 @@ footer .name {
 /* Small devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 600px) {
     #myphoto {
-        width: 40%;
+        width: 30%;
     }
 
     .navbar {
@@ -863,7 +863,7 @@ footer .name {
 /* Medium devices (landscape tablets, 601px and up) */
 @media only screen and (min-width: 601px) {
     #myphoto {
-        width: 40%;
+        width: 30%;
     }
 
 .navbar {
