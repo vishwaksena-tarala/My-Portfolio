@@ -6,46 +6,47 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
-.maxwidth{
-    max-width:1300px;
+.maxwidth {
+    max-width: 1300px;
     padding: 0 40px;
     margin: auto;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     width: 100%;
     z-index: 998;
-    font-family: 'Ubuntu',sans-serif;
-    padding:8px 0px 8px 0px ;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 8px 0px 8px 0px;
     transition: all 0.3s ease;
 }
 
-.sticky{
-    background-color:rgb(3, 20, 40);
+.sticky {
+    background-color: rgb(3, 20, 40);
 }
 
-.navbar .maxwidth{
+.navbar .maxwidth {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo a{
+.logo a {
     color: rgb(197, 217, 234);
     font-size: 35px;
     font-weight: 600;
 }
 
-.logo span{
+.logo span {
     color: aqua;
 }
 
-.menu li{
+.menu li {
     display: inline-block;
 }
 
@@ -58,17 +59,18 @@ html{
     transition: color 0.3s ease;
 }
 
-.menu li a:hover{
+.menu li a:hover {
     color: rgb(81, 81, 244);
 }
 
-.menubar{
+.menubar {
     color: rgb(197, 217, 234);
     font-size: 23;
     cursor: pointer;
     display: none
 }
-.scrollup{
+
+.scrollup {
     position: fixed;
     height: 45px;
     width: 42px;
@@ -86,68 +88,72 @@ html{
     pointer-events: none;
     transition: all 0.3s ease;
 }
-.scrollup.show{
+
+.scrollup.show {
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;
 }
 
-.home{
-    background:linear-gradient(to bottom,rgb(61, 89, 103),rgb(4, 6, 31));
+.home {
+    background: linear-gradient(to bottom, rgb(61, 89, 103), rgb(4, 6, 31));
     display: flex;
     height: 100vh;
     background-repeat: no-repeat;
     color: rgb(197, 217, 234);
-    font-family: 'Ubuntu',sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.home .maxwidth{
+.home .maxwidth {
     margin: auto 0 auto 180px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.homecontent .text1{
+.homecontent .text1 {
     font-size: 37px;
 }
 
-.homecontent .text2{
+.homecontent .text2 {
     font-size: 65px;
     font-weight: 600;
     margin-left: -3px;
 }
 
-.homecontent .text3{
+.homecontent .text3 {
     font-size: 48px;
     margin: 5px 0;
 }
 
-.home .homecontent .text3 span{
+.home .homecontent .text3 span {
     color: aqua;
     font-weight: 500;
 }
 
-.sizedbox{
+.sizedbox {
     width: 120px;
-    height:10px;
-}
-#myphoto {
-    max-width: auto;
-    height: auto;
+    height: 10px;
 }
 
-section{
+#myphoto {
+    width: 40%;
+
+}
+
+section {
     padding: 100px 0;
 }
-.about{
-    background:linear-gradient(to bottom,rgb(255, 255, 255),rgb(75, 102, 123));
+
+.about {
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(75, 102, 123));
     height: 100vh;
     background-repeat: no-repeat;
-    font-family:'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-section .tittle{
-    font-family: 'Ubuntu',sans-serif;
+
+section .tittle {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
     font-weight: 500;
     text-align: center;
@@ -155,8 +161,9 @@ section .tittle{
     padding: 20px;
     position: relative;
 }
-section .tittle::before{
-    content:'';
+
+section .tittle::before {
+    content: '';
     position: absolute;
     bottom: -2px;
     left: 50%;
@@ -165,7 +172,8 @@ section .tittle::before{
     background: rgb(0, 0, 0);
     transform: translateX(-50%);
 }
-section .tittle::after{
+
+section .tittle::after {
     position: absolute;
     left: 50%;
     font-size: 20px;
@@ -174,21 +182,23 @@ section .tittle::after{
     background-color: rgb(210, 213, 213);
     transform: translateX(-50%);
 }
-.about .tittle::after{
+
+.about .tittle::after {
     bottom: -15px;
     z-index: 950;
     content: 'who am i';
 }
+
 .aboutcontent,
 .acheivecontent,
 .skillcontent,
-.contactcontent{
+.contactcontent {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.aboutcontent .left{
+.aboutcontent .left {
     width: 45%;
 }
 
@@ -225,30 +235,34 @@ section .tittle::after{
     border: 2px solid rgb(15, 1, 53);
     transition: all 0.3s ease;
 }
-.aboutcontent .right a:hover{
+
+.aboutcontent .right a:hover {
     color: rgb(8, 27, 49);
     background: none;
     font-weight: 600;
 }
-.acheive,.project{
+
+.acheive,
+.project {
     background: black;
     color: rgb(189, 193, 225);
-    font-family:'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-.acheivecontent{
+
+.acheivecontent {
     display: flex;
     flex-wrap: wrap;
 }
 
 .acheive .tittle::before,
-.project .tittle::before{
+.project .tittle::before {
     z-index: 900;
     background: white;
     width: 300px;
 }
 
 .acheive .tittle::after,
-.project .tittle::after{
+.project .tittle::after {
     bottom: -15px;
     z-index: 950;
     content: 'what i acheived';
@@ -256,7 +270,7 @@ section .tittle::after{
     background-color: rgb(0, 0, 0);
 }
 
-.acheivecontent .card{
+.acheivecontent .card {
     width: calc(33% - 20px);
     background: rgb(31, 39, 62);
     text-align: center;
@@ -264,35 +278,36 @@ section .tittle::after{
     padding: 20px 25px;
 }
 
-.acheivecontent .card .box{
+.acheivecontent .card .box {
     transition: all 0.3s ease;
     padding-top: 10px;
 }
 
-.acheivecontent .card .box .box1{
+.acheivecontent .card .box .box1 {
     background-color: aliceblue;
     padding: 15px;
 }
 
-.acheivecontent .card:hover .box{
+.acheivecontent .card:hover .box {
     transform: scale(1.05);
 }
 
-.acheivecontent .card i{
+.acheivecontent .card i {
     font-size: 50px;
     color: aquamarine;
 }
 
-.acheivecontent .card .text{
+.acheivecontent .card .text {
     font-size: 28px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
-.acheivecontent .card p{
+.acheivecontent .card p {
     font-size: 18px;
     text-align: left;
 }
+
 .acheivecontent .box a {
     display: inline-block;
     background: rgb(4, 21, 41);
@@ -304,18 +319,20 @@ section .tittle::after{
     border: 2px solid rgb(130, 69, 192);
     transition: all 0.3s ease;
 }
-.acheivecontent .box a:hover{
+
+.acheivecontent .box a:hover {
     color: rgb(81, 81, 244);
     background: none;
     font-weight: 600;
     border-color: rgb(81, 81, 244);
 }
 
-.skills{
-    font-family:'Poppins',sans-serif;
-    background:linear-gradient(to bottom,rgb(255, 255, 255),rgb(179, 169, 209));
+.skills {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(179, 169, 209));
 }
-.skills .tittle::after{
+
+.skills .tittle::after {
     bottom: -15px;
     z-index: 950;
     content: 'what i know';
@@ -323,18 +340,22 @@ section .tittle::after{
     font-weight: 500;
     background: rgb(238, 232, 241);
 }
-.skillcontent .column{
+
+.skillcontent .column {
     width: calc(50% - 30px);
 }
-.skillcontent .left .text{
+
+.skillcontent .left .text {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.skillcontent .left p{
+
+.skillcontent .left p {
     text-align: justify;
 }
-.skillcontent .left a{
+
+.skillcontent .left a {
     display: inline-block;
     background: rgb(24, 58, 96);
     color: rgb(213, 212, 230);
@@ -346,30 +367,36 @@ section .tittle::after{
     border: 2px solid rgb(15, 1, 53);
     transition: all 0.3s ease;
 }
-.skillcontent .left a:hover{
+
+.skillcontent .left a:hover {
     color: brown;
     background: none;
 }
-.skillcontent .right .bars{
+
+.skillcontent .right .bars {
     margin-bottom: 15px;
 }
-.skillcontent .right .info{
+
+.skillcontent .right .info {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
     justify-content: space-between;
 }
-.skillcontent .right span{
+
+.skillcontent .right span {
     font-weight: 600;
     font-size: 18px;
 }
-.skillcontent .right .line{
+
+.skillcontent .right .line {
     height: 5px;
     width: 100%;
     background: rgb(105, 102, 102);
     position: relative;
 }
-.skillcontent .right .line::before{
+
+.skillcontent .right .line::before {
     content: '';
     position: absolute;
     height: 100%;
@@ -377,37 +404,46 @@ section .tittle::after{
     top: 0;
     background: brown
 }
-.skillcontent .right .python::before{
+
+.skillcontent .right .python::before {
     width: 90%;
 }
-.skillcontent .right .javascript::before{
+
+.skillcontent .right .javascript::before {
     width: 80%;
 }
-.skillcontent .right .Clang::before{
+
+.skillcontent .right .Clang::before {
     width: 80%;
 }
-.skillcontent .right .html::before{
+
+.skillcontent .right .html::before {
     width: 75%;
 }
-.skillcontent .right .dart::before{
+
+.skillcontent .right .dart::before {
     width: 70%;
 }
-.skillcontent .right .mysql::before{
+
+.skillcontent .right .mysql::before {
     width: 65%;
 }
-.more{
+
+.more {
     display: none;
 }
 
-.project .tittle::before{
+.project .tittle::before {
     width: 200px;
     bottom: 0px;
 }
-.project .tittle::after{
+
+.project .tittle::after {
     content: "what i did";
     bottom: -13px;
 }
-.projects .card{
+
+.projects .card {
     background: rgb(37, 37, 37);
     border-radius: 6px;
     padding: 25px 35px;
@@ -415,46 +451,56 @@ section .tittle::after{
     height: 400px;
     transition: all 0.3s ease;
 }
-.projects .card:hover{
+
+.projects .card:hover {
     background: rgb(2, 9, 32);
 }
-.projects .card .box{
+
+.projects .card .box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.projects .card:hover .box{
+
+.projects .card:hover .box {
     transform: scale(1.05);
 }
-.projects .card .text{
+
+.projects .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.projects .card img{
+
+.projects .card img {
     height: 150px;
     width: 150px !important;
     border-radius: 30%;
     border: 5px solid aquamarine;
     transition: all 0.3s ease;
 }
-.projects .card:hover img{
+
+.projects .card:hover img {
     border-color: black;
 }
-.links{
+
+.links {
     padding-top: 10px;
     font-size: 20px;
     color: rgb(101, 172, 219);
 }
-.links:hover{
+
+.links:hover {
     color: brown;
 }
-.owl-dots{
+
+.owl-dots {
     text-align: center;
     margin-top: 20px;
 }
-.owl-dot{
+
+.owl-dot {
     height: 13px;
     width: 13px;
     margin: 0 5px;
@@ -463,76 +509,94 @@ section .tittle::after{
     border: 2px solid aquamarine !important;
     transition: all 0.3s ease;
 }
-.owl-dot.active{
+
+.owl-dot.active {
     width: 35px;
     border-radius: 14px;
     background-color: aquamarine !important;
 }
 
 .contact,
-footer{
-    font-family:'Poppins',sans-serif;
+footer {
+    font-family: 'Poppins', sans-serif;
 }
-.contact .tittle::before{
+
+.contact .tittle::before {
     width: 190px;
 }
-.contact .tittle::after{
+
+.contact .tittle::after {
     content: 'get in touch';
     bottom: -13px;
     background-color: white;
 }
-.contactcontent .column{
+
+.contactcontent .column {
     width: calc(50% - 30px);
 }
-.contactcontent .text{
+
+.contactcontent .text {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.contactcontent .left p{
+
+.contactcontent .left p {
     text-align: justify;
 }
-.contactcontent .left .icons{
+
+.contactcontent .left .icons {
     margin: 10px 0;
 }
-.contactcontent .row{
+
+.contactcontent .row {
     display: flex;
     height: 65px;
     align-items: center;
 }
-.contactcontent .info{
+
+.contactcontent .info {
     margin-left: 30px;
 }
-.contactcontent .row i{
+
+.contactcontent .row i {
     font-size: 25px;
     color: rgb(30, 9, 88);
 }
-.contactcontent .info .head{
+
+.contactcontent .info .head {
     font-weight: 500;
 }
-.contactcontent .info .subtittle{
+
+.contactcontent .info .subtittle {
     color: rgb(63, 62, 62);
 }
-.contactcontent .right form .fields{
+
+.contactcontent .right form .fields {
     display: flex;
 }
-.contactcontent .right form .field{
+
+.contactcontent .right form .field {
     height: 45px;
     width: 100%;
     margin-bottom: 15px;
 }
-.contactcontent .right form .name{
+
+.contactcontent .right form .name {
     margin-right: 10px;
 }
-.contactcontent .right form .email{
+
+.contactcontent .right form .email {
     margin-right: 10px;
 }
-.contactcontent .right form .textarea{
+
+.contactcontent .right form .textarea {
     height: 80px;
     width: 100%;
 }
+
 .contactcontent .right form .field input,
-.contactcontent .right form textarea{
+.contactcontent .right form textarea {
     height: 100%;
     width: 100%;
     border: 1px solid rgb(0, 0, 0);
@@ -541,15 +605,18 @@ footer{
     padding: 0 15px;
     font-size: 17px;
 }
-.contactcontent .right form textarea{
+
+.contactcontent .right form textarea {
     padding-top: 10px;
     resize: none;
 }
-.contactcontent .right form .button{
+
+.contactcontent .right form .button {
     height: 47px;
     width: 160px
 }
-.contactcontent .right form .button button{
+
+.contactcontent .right form .button button {
     width: 100%;
     height: 100%;
     border: 2px solid rgb(10, 3, 39);
@@ -561,48 +628,66 @@ footer{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.contactcontent .right form .button button:hover{
+
+.contactcontent .right form .button button:hover {
     color: rgb(30, 9, 88);
     background: none;
 }
-#linkbutton:hover{
+
+#linkbutton:hover {
     color: brown;
 }
-footer{
+
+footer {
     background: rgb(0, 0, 0);
     padding: 15px;
     text-align: center;
 }
-footer span{
+
+footer span {
     color: rgb(255, 255, 255);
 }
-footer .name{
+
+footer .name {
     color: aqua;
 }
 
-@media (max-width:1110px){
-    .home .maxwidth{
+@media (max-width:1110px) {
+    #myphoto {
+        width: 80%;
+    }
+
+    .home .maxwidth {
         margin-left: 50px;
     }
-    .homecontent .text1{
-    font-size: 32px;
+
+    .homecontent .text1 {
+        font-size: 32px;
     }
-    .homecontent .text2{
-    font-size: 55px;
+
+    .homecontent .text2 {
+        font-size: 55px;
     }
-    .homecontent .text3{
-    font-size: 35px;
+
+    .homecontent .text3 {
+        font-size: 35px;
     }
-    
+
 }
 
-@media (max-width:1010px){
-    .maxwidth{
+@media (max-width:1010px) {
+    #myphoto {
+        width: 80%;
+    }
+    
+    .maxwidth {
         padding: 0 30px;
     }
-    .homecontent .text1{
-    font-size: 30px;
+
+    .homecontent .text1 {
+        font-size: 30px;
     }
+
     .aboutcontent .left img {
         height: auto;
         width: 100%;
@@ -610,132 +695,166 @@ footer .name{
     }
 }
 
-@media (max-width:970px){
-    .maxwidth{
+@media (max-width:970px) {
+    #myphoto {
+        width: 80%;
+    }
+
+    .maxwidth {
         padding: 0 20px;
     }
 
-    .menubar{
+    .menubar {
         display: block;
         z-index: 999;
     }
 
-    .menubar i.active:before{
-        content:'\f00d'
+    .menubar i.active:before {
+        content: '\f00d'
     }
 
-    .menu{
+    .menu {
         position: fixed;
         height: 100vh;
         width: 100%;
         left: -100%;
-        top:0;
+        top: 0;
         background: rgb(3, 20, 40);
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
     }
 
-    .menu.active{
-        left:0;
+    .menu.active {
+        left: 0;
     }
-    .menu li{
-        display:block;
+
+    .menu li {
+        display: block;
     }
-    .menu li a{
+
+    .menu li a {
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
     }
-    .homecontent .text1{
-    font-size: 28px;
+
+    .homecontent .text1 {
+        font-size: 28px;
     }
-    .homecontent .text2{
-    font-size: 50px;
+
+    .homecontent .text2 {
+        font-size: 50px;
     }
-    .homecontent .text3{
-    font-size: 30px;
+
+    .homecontent .text3 {
+        font-size: 30px;
     }
-    .aboutcontent .column{
+
+    .aboutcontent .column {
         width: 50%;
     }
-    .maxwidth{
+
+    .maxwidth {
         max-width: 800px;
     }
-    .aboutcontent .left{
+
+    .aboutcontent .left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .aboutcontent .right{
+
+    .aboutcontent .right {
         text-align: center;
         justify-content: center;
         width: 80%;
-        margin-left:50px;
+        margin-left: 50px;
         margin-right: 50px;
     }
-    .aboutcontent{
-        display: inline-block; 
+
+    .aboutcontent {
+        display: inline-block;
     }
-    .about{
+
+    .about {
         height: fit-content;
     }
-    .acheivecontent .card{
+
+    .acheivecontent .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+
     .skillcontent .column,
-    .contactcontent .column{
+    .contactcontent .column {
         width: 100%;
         margin-bottom: 35px;
     }
+
     .skillcontent,
-    .contactcontent{
+    .contactcontent {
         display: inline-block;
     }
 }
 
-@media (max-width:700px){
-    .acheivecontent .card{
+@media (max-width:700px) {
+    .acheivecontent .card {
         width: 100%;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 600px) {
+    #myphoto {
+        width: 40%;
+    }
+
     .navbar {
         padding: 4px 0;
     }
+
     .logo a {
         font-size: 25px;
     }
+
     .menu li a {
         font-size: 14px;
     }
-    .homecontent .text1{
+
+    .homecontent .text1 {
         font-size: 20px;
     }
-    .homecontent .text2{
+
+    .homecontent .text2 {
         font-size: 30px;
     }
-    .homecontent .text3{
+
+    .homecontent .text3 {
         font-size: 20px;
     }
-    .aboutcontent .left, .aboutcontent .right {
+
+    .aboutcontent .left,
+    .aboutcontent .right {
         width: 100%;
     }
+
     .acheivecontent .card {
         width: 100%;
     }
+
     .skillcontent .column {
         width: 100%;
     }
+
     .contactcontent .column {
         width: 100%;
     }
+
     .menubar {
         display: block;
     }
+
     .menu {
         display: none;
     }
@@ -743,80 +862,112 @@ footer .name{
 
 /* Medium devices (landscape tablets, 601px and up) */
 @media only screen and (min-width: 601px) {
-    .navbar {
-        padding: 6px 0;
+    #myphoto {
+        width: 40%;
     }
-    .logo a {
-        font-size: 30px;
-    }
-    .menu li a {
-        font-size: 16px;
-    }
-    .homecontent .text1{
-        font-size: 30px;
-    }
-    .homecontent .text2{
-        font-size: 45px;
-    }
-    .homecontent .text3{
-        font-size: 30px;
-    }
-    .aboutcontent .left, .aboutcontent .right {
-        width: 50%;
-    }
-    .acheivecontent .card {
-        width: calc(50% - 10px);
-    }
-    .skillcontent .column {
-        width: 50%;
-    }
-    .contactcontent .column {
-        width: 50%;
-    }
-    .menubar {
-        display: none;
-    }
-    .menu {
-        display: inline-block;
-    }
+
+.navbar {
+    padding: 6px 0;
+}
+
+.logo a {
+    font-size: 30px;
+}
+
+.menu li a {
+    font-size: 16px;
+}
+
+.homecontent .text1 {
+    font-size: 30px;
+}
+
+.homecontent .text2 {
+    font-size: 45px;
+}
+
+.homecontent .text3 {
+    font-size: 30px;
+}
+
+.aboutcontent .left,
+.aboutcontent .right {
+    width: 50%;
+}
+
+.acheivecontent .card {
+    width: calc(50% - 10px);
+}
+
+.skillcontent .column {
+    width: 50%;
+}
+
+.contactcontent .column {
+    width: 50%;
+}
+
+.menubar {
+    display: none;
+}
+
+.menu {
+    display: inline-block;
+}
 }
 
 /* Large devices (laptops/desktops, 993px and up) */
 @media only screen and (min-width: 993px) {
-    .navbar {
-        padding: 8px 0;
+    #myphoto {
+        width: 80%;
     }
-    .logo a {
-        font-size: 35px;
-    }
-    .menu li a {
-        font-size: 18px;
-    }
-    .homecontent .text1{
-        font-size: 37px;
-    }
-    .homecontent .text2{
-        font-size: 65px;
-    }
-    .homecontent .text3{
-        font-size: 48px;
-    }
-    .aboutcontent .left, .aboutcontent .right {
-        width: 50%;
-    }
-    .acheivecontent .card {
-        width: calc(33% - 20px);
-    }
-    .skillcontent .column {
-        width: 50%;
-    }
-    .contactcontent .column {
-        width: 50%;
-    }
-    .menubar {
-        display: none;
-    }
-    .menu {
-        display: inline-block;
-    }
+
+.navbar {
+    padding: 8px 0;
+}
+
+.logo a {
+    font-size: 35px;
+}
+
+.menu li a {
+    font-size: 18px;
+}
+
+.homecontent .text1 {
+    font-size: 37px;
+}
+
+.homecontent .text2 {
+    font-size: 65px;
+}
+
+.homecontent .text3 {
+    font-size: 48px;
+}
+
+.aboutcontent .left,
+.aboutcontent .right {
+    width: 50%;
+}
+
+.acheivecontent .card {
+    width: calc(33% - 20px);
+}
+
+.skillcontent .column {
+    width: 50%;
+}
+
+.contactcontent .column {
+    width: 50%;
+}
+
+.menubar {
+    display: none;
+}
+
+.menu {
+    display: inline-block;
+}
 }
